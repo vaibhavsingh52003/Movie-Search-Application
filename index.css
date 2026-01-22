@@ -1,0 +1,97 @@
+/* Apply a dark cinematic background */
+body {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center content and add spacing */
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Stylish search bar */
+.search-bar input {
+  width: 60%;
+  padding: 12px;
+  margin: 20px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Display movies in a clean grid */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Movie cards with hover effect */
+.movie-card {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(218, 35, 35, 0.2);
+}
+
+/* Movie images with rounded corners */
+.movie-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Movie details */
+.movie-detail {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.movie-detail img {
+  width: 220px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 80%;
+  }
+
+  .movie-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.movie-title {
+  color: rgb(5, 245, 125) !important; 
+  background: black;
+  padding: 5px;
+  font-weight: bold;
+}
